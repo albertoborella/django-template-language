@@ -1,0 +1,22 @@
+{% extends 'e-commerce/base.html' %}
+
+{% block title %}Agregar Comics a la bd{% endblock %}
+
+{% block content %}
+    <h1>Comic</h1>
+<form action="" method="POST">{% csrf_token %}
+    <label for="marvel_id">Marvel-id</label>
+    <input type="number" id="marvel_id" name="marvel_id" value=""><br><br>
+    <label for="title">Título:</label>
+    <input type="text" id="title" name="title" value=""><br><br>
+    <label for="description">Descripción:></label>
+    <input type="text" id="description" name="description" value=""><br><br>
+    <label for="price">Precio:</label>
+    <input type="number" id="price" name="price" value=""><br><br>
+    <label for="title">Stock:</label>
+    <input type="number" id="stock_qty" name="stock_qty" value=""><br><br>
+    <label for="picture">URL-Tapa:</label>
+    <input type="url" id="picture" name="picture" value=""><br><br>
+    <input type="submit" value="Enviar">
+</form>
+{% endblock %}

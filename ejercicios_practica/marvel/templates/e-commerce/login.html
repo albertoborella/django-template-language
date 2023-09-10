@@ -1,0 +1,16 @@
+{% extends 'e-commerce/base.html' %}
+
+{% block title %}e-commerce | Login{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Login</h1>
+<form action="{% url 'login' %}" method="POST">{% csrf_token %}
+    <label for="usuario">Usuario:</label><br>
+    <input type="text" id="usuario" name="usuario" value=""><br>
+    <label for="password">Password:</label><br>
+    <input type="text" id="password" name="password" value=""><br><br>
+    <input type="submit" value="Enviar">
+</form>
+</div>
+{% endblock %}

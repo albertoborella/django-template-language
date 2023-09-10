@@ -1,0 +1,18 @@
+<h1>Template que muestra Formularios GET Y POST</h1>
+<h2>Formulario GET</h2>
+<form action="">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" value="José">
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" value=61>
+    <input type="submit" value="Agregar">
+</form>
+<h2>Formulario para hacer un POST</h2>
+<p>En la etiqueta form se le debe agregar el atributo method='POST'</p>
+<form action="" method="POST">{% csrf_token %}
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" value="Andrés">
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" value=58>
+    <input type="submit" value="Agregar">
+</form>

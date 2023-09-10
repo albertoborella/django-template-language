@@ -1,0 +1,13 @@
+{% extends 'e-commerce/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Agregar Comics a la tienda</h1>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Crear">
+    </form>
+</div>
+{% endblock %}

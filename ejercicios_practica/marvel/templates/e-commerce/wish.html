@@ -1,0 +1,16 @@
+{% extends 'e-commerce/base.html' %}
+
+{% block title %}e-commerce | Comics preferidos{% endblock %}
+
+{% block content %}
+<div style="width: 20%; margin: auto; padding: 30px;">
+<h2 style="color: blue; font-size: 35px; text-decoration:underline; margin: auto;">Comics Favoritos</h2>
+<ul>
+    <li>Comic: {{comic_favorito.0}}</li>
+    <li>Comic: {{comic_favorito.1}}</li>
+    <li>Comic: {{comic_favorito.2}}</li>
+    <li>Comic: {{comic_favorito.3}}</li>
+    <li>Comic: {{comic_favorito.4}}</li>
+</ul>
+</div>
+{% endblock %}

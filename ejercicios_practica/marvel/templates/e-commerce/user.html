@@ -1,0 +1,19 @@
+{% extends 'e-commerce/base.html' %}
+
+{% block title %}Usuario logeado{% endblock %}
+
+{% block content %}
+
+<h2>Información del Usuario logeado:</h2>
+
+<ul>
+    <li>Username: {{user}}</li>
+    <li>Nombre: {{first_name}}</li>
+    <li>Apellido: {{last_name}}</li>
+    <li>E-mail: {{email}}</li>
+
+
+
+</ul>
+
+{% endblock %}
